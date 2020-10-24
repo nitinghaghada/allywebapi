@@ -1,0 +1,60 @@
+2019-11-23T19:39:35.0955798+05:30 0HLRF1ERF8FHD:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:52474/api/entity/metadata/PurchaseRequisition   (ca22a1cb)
+2019-11-23T19:39:35.1006124+05:30 0HLRF1ERF8FHD:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-23T19:39:35.1019766+05:30 0HLRF1ERF8FHD:00000001 [INF] Request finished in 8.4503ms 204  (791a596a)
+2019-11-23T19:39:35.2322746+05:30 0HLRF1ERF8FHD:00000002 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:52474/api/entity/list/PurchaseRequisition/50/0?orderby=   (ca22a1cb)
+2019-11-23T19:39:35.2324575+05:30 0HLRF1ERF8FHD:00000002 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-23T19:39:35.2325736+05:30 0HLRF1ERF8FHD:00000002 [INF] Request finished in 17.1307ms 204  (791a596a)
+2019-11-23T19:39:35.5928276+05:30 0HLRF1ERF8FHD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:52474/api/entity/metadata/PurchaseRequisition   (ca22a1cb)
+2019-11-23T19:39:35.5933454+05:30 0HLRF1ERF8FHD:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-23T19:39:35.5936909+05:30 0HLRF1ERF8FHE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:52474/api/entity/list/PurchaseRequisition/50/0?orderby=   (ca22a1cb)
+2019-11-23T19:39:35.5937651+05:30 0HLRF1ERF8FHE:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-23T19:39:35.5953220+05:30 0HLRF1ERF8FHE:00000001 [INF] Executing endpoint '"AllyWebApi.Controllers.ListController.Get (Decos.AllyWebApi)"' (500cc934)
+2019-11-23T19:39:35.5953298+05:30 0HLRF1ERF8FHD:00000003 [INF] Executing endpoint '"AllyWebApi.Controllers.ListController.GetMetaData (Decos.AllyWebApi)"' (500cc934)
+2019-11-23T19:39:35.5980078+05:30 0HLRF1ERF8FHD:00000003 [INF] Route matched with "{action = \"GetMetaData\", controller = \"List\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[BusinessModel.Models.ApiResponseMessage] GetMetaData(System.String)" on controller "AllyWebApi.Controllers.ListController" ("Decos.AllyWebApi"). (122b2fdf)
+2019-11-23T19:39:35.5982337+05:30 0HLRF1ERF8FHE:00000001 [INF] Route matched with "{action = \"Get\", controller = \"List\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[BusinessModel.Models.ApiResponseMessage] Get(System.String, Int32, Int32, System.String, System.String)" on controller "AllyWebApi.Controllers.ListController" ("Decos.AllyWebApi"). (122b2fdf)
+2019-11-23T19:39:35.6828902+05:30 0HLRF1ERF8FHE:00000001 [INF] Executing action method "AllyWebApi.Controllers.ListController.Get (Decos.AllyWebApi)" - Validation state: Valid (dad538d7)
+2019-11-23T19:39:35.7172328+05:30 0HLRF1ERF8FHD:00000003 [INF] Executing action method "AllyWebApi.Controllers.ListController.GetMetaData (Decos.AllyWebApi)" - Validation state: Valid (dad538d7)
+2019-11-23T19:39:57.4400958+05:30 0HLRF1ERF8FHD:00000003 [ERR] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond (83a4168c)
+System.Net.WebException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at AllyWebApi.Processor.GetMetaData(String entity) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 96
+   at AllyWebApi.Processor.VerifyAndUpdateJson(String jsonFile, String entity) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 170
+   at AllyWebApi.Controllers.ListController.GetMetaData(String entity) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Controllers\ListController.cs:line 139
+2019-11-23T19:39:57.4417815+05:30 0HLRF1ERF8FHE:00000001 [ERR] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond (83a4168c)
+System.Net.WebException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Decos.ServiceContext.JoinApiService.JoinApiService.Get(String requestUrl, Boolean needsAuthHeaders) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\ServiceContext\JoinApiService\JoinApiService.cs:line 489
+   at Decos.ServiceContext.JoinApiService.JoinApiService.GetBookItems(String type, String bookId, Int32 pageSize, Int32 skip, String filter, String orderBy) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\ServiceContext\JoinApiService\JoinApiService.cs:line 143
+   at Decos.ServiceContext.JoinApiService.JoinApiService.GetLinkedItems(String bookKey, String itemType, Int32 pageSize, Int32 skip, String filter, String orderBy) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\ServiceContext\JoinApiService\JoinApiService.cs:line 95
+   at AllyWebApi.Processor.GetRelatedList(String mainItemKey, String entity, Int32 pageSize, Int32 skip, Int32& count, String filter, String orderby) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 387
+   at AllyWebApi.Processor.GetList(String entity, Int32 pageSize, Int32 skip, Int32& count, String filter, String orderby) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 237
+   at AllyWebApi.Controllers.ListController.Get(String entity, Int32 pageSize, Int32 skip, String filter, String orderby) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Controllers\ListController.cs:line 36

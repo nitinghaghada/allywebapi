@@ -1,0 +1,853 @@
+[
+  {
+    "key": "group1",
+    "type": "input",
+    "className": "col-12 sectionRow",
+    "template": "<div>Requisition details</div>",
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": null,
+      "placeholder": null,
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "mark",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Requisition No.",
+      "placeholder": "Requisition No.",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "date1",
+    "type": "datepicker",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Created Date",
+      "placeholder": "Created Date",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": { "validation": "futureDateValidator" },
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text8",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Revision Number",
+      "placeholder": "Revision Number",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text5",
+    "type": "select",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Status",
+      "placeholder": "Status",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": [
+        {
+          "label": "Authorized",
+          "value": "Authorized"
+        },
+        {
+          "label": "Buyer Assigned",
+          "value": "Buyer Assigned"
+        },
+        {
+          "label": "Partially Authorized By PM",
+          "value": "Partially Authorized By PM"
+        },
+        {
+          "label": "Partially Authorized By TL",
+          "value": "Partially Authorized By TL"
+        },
+        {
+          "label": "Planned",
+          "value": "Planned"
+        },
+        {
+          "label": "Released",
+          "value": "Released"
+        },
+        {
+          "label": "Request Created",
+          "value": "Request Created"
+        },
+        {
+          "label": "Revoked",
+          "value": "Revoked"
+        },
+        {
+          "label": "Revoked Authorization By Line Manager",
+          "value": "Revoked Authorization By Line Manager"
+        }
+      ],
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "num1",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Net Amount Base",
+      "placeholder": "Net Amount Base",
+      "required": false,
+      "type": "number",
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text3",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Site",
+      "placeholder": "Site",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text1",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Project ID",
+      "placeholder": "Project ID",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "group3",
+    "type": "input",
+    "className": "col-6 sectionRow",
+    "template": "<div>Handler details</div>",
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": null,
+      "placeholder": null,
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text11",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Project Name",
+      "placeholder": "Project Name",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text6",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Requisitioner",
+      "placeholder": "Requisitioner",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text4",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Company",
+      "placeholder": "Company",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "firstname",
+    "type": "select",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Head Section",
+      "placeholder": "Head Section",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": [
+        {
+          "label": "Administrator",
+          "value": "Administrator"
+        },
+        {
+          "label": "Ahmadi nami, Ali reza",
+          "value": "Ahmadi nami, Ali reza"
+        },
+        {
+          "label": "Aladaghlu, Bagher",
+          "value": "Aladaghlu, Bagher"
+        },
+        {
+          "label": "Asadi, Parisa",
+          "value": "Asadi, Parisa"
+        },
+        {
+          "label": "Askari, Mitra",
+          "value": "Askari, Mitra"
+        },
+        {
+          "label": "Azim Zanjani, Ali Haj",
+          "value": "Azim Zanjani, Ali Haj"
+        },
+        {
+          "label": "Badiel, Fahimeh",
+          "value": "Badiel, Fahimeh"
+        },
+        {
+          "label": "Bahman, Kaveh",
+          "value": "Bahman, Kaveh"
+        },
+        {
+          "label": "Bakhitiyari, Hasan Mahrou",
+          "value": "Bakhitiyari, Hasan Mahrou"
+        },
+        {
+          "label": "D, Govindaarun",
+          "value": "D, Govindaarun"
+        },
+        {
+          "label": "DEFAULT, DEFAULT",
+          "value": "DEFAULT, DEFAULT"
+        },
+        {
+          "label": "Decos gebruiker",
+          "value": "Decos gebruiker"
+        },
+        {
+          "label": "Firuzy, Babak",
+          "value": "Firuzy, Babak"
+        },
+        {
+          "label": "Haghshomar, Sajad Sayad",
+          "value": "Haghshomar, Sajad Sayad"
+        },
+        {
+          "label": "Heidari, Erfan",
+          "value": "Heidari, Erfan"
+        },
+        {
+          "label": "Houshmand, Vahid",
+          "value": "Houshmand, Vahid"
+        },
+        {
+          "label": "Izadifar, Mohmadese",
+          "value": "Izadifar, Mohmadese"
+        },
+        {
+          "label": "Jamshidi, Marjan",
+          "value": "Jamshidi, Marjan"
+        },
+        {
+          "label": "Javidfar, Vahid",
+          "value": "Javidfar, Vahid"
+        },
+        {
+          "label": "Joudaki, Zohreh",
+          "value": "Joudaki, Zohreh"
+        },
+        {
+          "label": "Leclercq, Nicolas",
+          "value": "Leclercq, Nicolas"
+        },
+        {
+          "label": "Mavadatian, Alireza",
+          "value": "Mavadatian, Alireza"
+        },
+        {
+          "label": "PROCUREMENT, PROCUREMENT",
+          "value": "PROCUREMENT, PROCUREMENT"
+        },
+        {
+          "label": "Panahizadeh, Mansour",
+          "value": "Panahizadeh, Mansour"
+        },
+        {
+          "label": "Pour, Tahereh Hasan",
+          "value": "Pour, Tahereh Hasan"
+        },
+        {
+          "label": "Rathi, Reetesh",
+          "value": "Rathi, Reetesh"
+        },
+        {
+          "label": "Rodrigues, Clifford",
+          "value": "Rodrigues, Clifford"
+        },
+        {
+          "label": "S, Prasath",
+          "value": "S, Prasath"
+        },
+        {
+          "label": "Sheikhi, Younes",
+          "value": "Sheikhi, Younes"
+        },
+        {
+          "label": "Sinha, Aakash",
+          "value": "Sinha, Aakash"
+        },
+        {
+          "label": "Solgani, Saeid Soltani",
+          "value": "Solgani, Saeid Soltani"
+        },
+        {
+          "label": "Supplier, S501",
+          "value": "Supplier, S501"
+        },
+        {
+          "label": "Supplier, S503",
+          "value": "Supplier, S503"
+        },
+        {
+          "label": "T, Ayyamperumal",
+          "value": "T, Ayyamperumal"
+        },
+        {
+          "label": "Torkaman, Vahid",
+          "value": "Torkaman, Vahid"
+        },
+        {
+          "label": "Y, Zia",
+          "value": "Y, Zia"
+        },
+        {
+          "label": "kazemzadeh, mohammad",
+          "value": "kazemzadeh, mohammad"
+        },
+        {
+          "label": "moghimi, bijan",
+          "value": "moghimi, bijan"
+        },
+        {
+          "label": "test, test",
+          "value": "test, test"
+        },
+        {
+          "label": ", Sourcing Team Member 1",
+          "value": ", Sourcing Team Member 1"
+        },
+        {
+          "label": ", Sourcing team member 2",
+          "value": ", Sourcing team member 2"
+        },
+        {
+          "label": ", Training 1",
+          "value": ", Training 1"
+        },
+        {
+          "label": ", Training 2",
+          "value": ", Training 2"
+        },
+        {
+          "label": ", Training 3",
+          "value": ", Training 3"
+        }
+      ],
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text9",
+    "type": "select",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Buyer",
+      "placeholder": "Buyer",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": [
+        {
+          "label": "Administrator",
+          "value": "Administrator"
+        },
+        {
+          "label": "Ahmadi nami, Ali reza",
+          "value": "Ahmadi nami, Ali reza"
+        },
+        {
+          "label": "Aladaghlu, Bagher",
+          "value": "Aladaghlu, Bagher"
+        },
+        {
+          "label": "Asadi, Parisa",
+          "value": "Asadi, Parisa"
+        },
+        {
+          "label": "Askari, Mitra",
+          "value": "Askari, Mitra"
+        },
+        {
+          "label": "Azim Zanjani, Ali Haj",
+          "value": "Azim Zanjani, Ali Haj"
+        },
+        {
+          "label": "Badiel, Fahimeh",
+          "value": "Badiel, Fahimeh"
+        },
+        {
+          "label": "Bahman, Kaveh",
+          "value": "Bahman, Kaveh"
+        },
+        {
+          "label": "Bakhitiyari, Hasan Mahrou",
+          "value": "Bakhitiyari, Hasan Mahrou"
+        },
+        {
+          "label": "D, Govindaarun",
+          "value": "D, Govindaarun"
+        },
+        {
+          "label": "DEFAULT, DEFAULT",
+          "value": "DEFAULT, DEFAULT"
+        },
+        {
+          "label": "Decos gebruiker",
+          "value": "Decos gebruiker"
+        },
+        {
+          "label": "Firuzy, Babak",
+          "value": "Firuzy, Babak"
+        },
+        {
+          "label": "Haghshomar, Sajad Sayad",
+          "value": "Haghshomar, Sajad Sayad"
+        },
+        {
+          "label": "Heidari, Erfan",
+          "value": "Heidari, Erfan"
+        },
+        {
+          "label": "Houshmand, Vahid",
+          "value": "Houshmand, Vahid"
+        },
+        {
+          "label": "Izadifar, Mohmadese",
+          "value": "Izadifar, Mohmadese"
+        },
+        {
+          "label": "Jamshidi, Marjan",
+          "value": "Jamshidi, Marjan"
+        },
+        {
+          "label": "Javidfar, Vahid",
+          "value": "Javidfar, Vahid"
+        },
+        {
+          "label": "Joudaki, Zohreh",
+          "value": "Joudaki, Zohreh"
+        },
+        {
+          "label": "Leclercq, Nicolas",
+          "value": "Leclercq, Nicolas"
+        },
+        {
+          "label": "Mavadatian, Alireza",
+          "value": "Mavadatian, Alireza"
+        },
+        {
+          "label": "PROCUREMENT, PROCUREMENT",
+          "value": "PROCUREMENT, PROCUREMENT"
+        },
+        {
+          "label": "Panahizadeh, Mansour",
+          "value": "Panahizadeh, Mansour"
+        },
+        {
+          "label": "Pour, Tahereh Hasan",
+          "value": "Pour, Tahereh Hasan"
+        },
+        {
+          "label": "Rathi, Reetesh",
+          "value": "Rathi, Reetesh"
+        },
+        {
+          "label": "Rodrigues, Clifford",
+          "value": "Rodrigues, Clifford"
+        },
+        {
+          "label": "S, Prasath",
+          "value": "S, Prasath"
+        },
+        {
+          "label": "Sheikhi, Younes",
+          "value": "Sheikhi, Younes"
+        },
+        {
+          "label": "Sinha, Aakash",
+          "value": "Sinha, Aakash"
+        },
+        {
+          "label": "Solgani, Saeid Soltani",
+          "value": "Solgani, Saeid Soltani"
+        },
+        {
+          "label": "Supplier, S501",
+          "value": "Supplier, S501"
+        },
+        {
+          "label": "Supplier, S503",
+          "value": "Supplier, S503"
+        },
+        {
+          "label": "T, Ayyamperumal",
+          "value": "T, Ayyamperumal"
+        },
+        {
+          "label": "Torkaman, Vahid",
+          "value": "Torkaman, Vahid"
+        },
+        {
+          "label": "Y, Zia",
+          "value": "Y, Zia"
+        },
+        {
+          "label": "kazemzadeh, mohammad",
+          "value": "kazemzadeh, mohammad"
+        },
+        {
+          "label": "moghimi, bijan",
+          "value": "moghimi, bijan"
+        },
+        {
+          "label": "test, test",
+          "value": "test, test"
+        },
+        {
+          "label": ", Sourcing Team Member 1",
+          "value": ", Sourcing Team Member 1"
+        },
+        {
+          "label": ", Sourcing team member 2",
+          "value": ", Sourcing team member 2"
+        },
+        {
+          "label": ", Training 1",
+          "value": ", Training 1"
+        },
+        {
+          "label": ", Training 2",
+          "value": ", Training 2"
+        },
+        {
+          "label": ", Training 3",
+          "value": ", Training 3"
+        }
+      ],
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text7",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Order Code",
+      "placeholder": "Order Code",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "group2",
+    "type": "input",
+    "className": "col-12 sectionRow",
+    "template": "<div>History details</div>",
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": null,
+      "placeholder": null,
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "bol2",
+    "type": "checkbox",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Is Supplier Blanket Available?",
+      "placeholder": "Is Supplier Blanket Available?",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text15",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Blanket ID",
+      "placeholder": "Blanket ID",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "bol1",
+    "type": "checkbox",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Is Recent PO?",
+      "placeholder": "Is Recent PO?",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": false,
+      "readOnly": false,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  },
+  {
+    "key": "text17",
+    "type": "input",
+    "className": "col-6",
+    "template": null,
+    "wrapper": null,
+    "defaultValue": null,
+    "templateOptions": {
+      "label": "Recent Order Number",
+      "placeholder": "Recent Order Number",
+      "required": false,
+      "type": null,
+      "labelProp": null,
+      "valueProp": null,
+      "disabled": true,
+      "readOnly": true,
+      "options": null,
+      "changeExpr": null
+    },
+    "validators": null,
+    "customField": false,
+    "expressionProperties": null
+  }
+]

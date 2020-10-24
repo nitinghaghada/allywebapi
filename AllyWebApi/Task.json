@@ -1,0 +1,58 @@
+[
+  {
+    "DBFIELD": "itemkey",
+    "PROPERTYNAME": "ItemKey"
+  },
+  {
+    "DBFIELD": "text7",
+    "PROPERTYNAME": "ActionCode"
+  },
+  {
+    "DBFIELD": "text3",
+    "PROPERTYNAME": "Handler"
+  },
+  {
+    "DBFIELD": "date3",
+    "PROPERTYNAME": "Duedate"
+  },
+  {
+    "DBFIELD": "mark",
+    "PROPERTYNAME": "Status"
+  },
+  {
+    "DBFIELD": "date2",
+    "PROPERTYNAME": "HandleDate"
+  },
+  {
+    "DBFIELD": "date1",
+    "PROPERTYNAME": "HandleBefore"
+  },
+  {
+    "DBFIELD": "text9",
+    "PROPERTYNAME": "Registration"
+  },
+  {
+    "DBFIELD": "text8",
+    "PROPERTYNAME": "Outcome"
+  },
+  {
+    "DBFIELD": "itemtype_key2",
+    "PROPERTYNAME": "ActivityType"
+  },
+  {
+    "DBFIELD": "url",
+    "PROPERTYNAME": "MainItemKey"
+  },
+  {
+    "DBFIELD": "text4",
+    "PROPERTYNAME": "ReferenceNumber"
+  },
+  {
+    "DBFIELD": "remainingdays",
+    "PROPERTYNAME": "RemainingDays"
+  },
+  {
+    "DBFIELD": "mainItemType",
+    "PROPERTYNAME": "MainItemType"
+  }
+]

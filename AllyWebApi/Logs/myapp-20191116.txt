@@ -1,0 +1,60 @@
+2019-11-16T08:28:55.6967972+05:30 0HLR9OHD8FIB8:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:52474/api/entity/metadata/PurchaseRequisition   (ca22a1cb)
+2019-11-16T08:28:55.6975170+05:30 0HLR9OHD8FIB8:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-16T08:28:55.6976875+05:30 0HLR9OHD8FIB8:00000001 [INF] Request finished in 1.4836ms 204  (791a596a)
+2019-11-16T08:28:55.8676751+05:30 0HLR9OHD8FIB8:00000002 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:52474/api/entity/list/PurchaseRequisition/50/0   (ca22a1cb)
+2019-11-16T08:28:55.8681047+05:30 0HLR9OHD8FIB8:00000002 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-16T08:28:55.8687216+05:30 0HLR9OHD8FIB8:00000002 [INF] Request finished in 1.1015ms 204  (791a596a)
+2019-11-16T08:28:58.7574692+05:30 0HLR9OHD8FIB8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:52474/api/entity/metadata/PurchaseRequisition   (ca22a1cb)
+2019-11-16T08:28:58.7584883+05:30 0HLR9OHD8FIB8:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-16T08:28:58.7621853+05:30 0HLR9OHD8FIB8:00000003 [INF] Executing endpoint '"AllyWebApi.Controllers.ListController.GetMetaData (Decos.AllyWebApi)"' (500cc934)
+2019-11-16T08:28:58.8037286+05:30 0HLR9OHD8FIB8:00000003 [INF] Route matched with "{action = \"GetMetaData\", controller = \"List\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[BusinessModel.Models.ApiResponseMessage] GetMetaData(System.String)" on controller "AllyWebApi.Controllers.ListController" ("Decos.AllyWebApi"). (122b2fdf)
+2019-11-16T08:28:59.7943886+05:30 0HLR9OHD8FIB8:00000003 [INF] Executing action method "AllyWebApi.Controllers.ListController.GetMetaData (Decos.AllyWebApi)" - Validation state: Valid (dad538d7)
+2019-11-16T08:29:00.3212350+05:30 0HLR9OHD8FIB9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:52474/api/entity/list/PurchaseRequisition/50/0   (ca22a1cb)
+2019-11-16T08:29:00.3213101+05:30 0HLR9OHD8FIB9:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2019-11-16T08:29:00.3213684+05:30 0HLR9OHD8FIB9:00000001 [INF] Executing endpoint '"AllyWebApi.Controllers.ListController.Get (Decos.AllyWebApi)"' (500cc934)
+2019-11-16T08:29:00.3214568+05:30 0HLR9OHD8FIB9:00000001 [INF] Route matched with "{action = \"Get\", controller = \"List\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[BusinessModel.Models.ApiResponseMessage] Get(System.String, Int32, Int32, System.String)" on controller "AllyWebApi.Controllers.ListController" ("Decos.AllyWebApi"). (122b2fdf)
+2019-11-16T08:29:00.8925283+05:30 0HLR9OHD8FIB9:00000001 [INF] Executing action method "AllyWebApi.Controllers.ListController.Get (Decos.AllyWebApi)" - Validation state: Valid (dad538d7)
+2019-11-16T08:29:05.0126846+05:30 0HLR9OHD8FIB8:00000003 [ERR] A socket operation was attempted to an unreachable host A socket operation was attempted to an unreachable host (17ae1131)
+System.Net.WebException: A socket operation was attempted to an unreachable host A socket operation was attempted to an unreachable host ---> System.Net.Http.HttpRequestException: A socket operation was attempted to an unreachable host ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at AllyWebApi.Processor.GetMetaData(String entity) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 95
+   at AllyWebApi.Processor.VerifyAndUpdateJson(String jsonFile, String entity) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 169
+   at AllyWebApi.Controllers.ListController.GetMetaData(String entity) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Controllers\ListController.cs:line 139
+2019-11-16T08:29:05.0305566+05:30 0HLR9OHD8FIB9:00000001 [ERR] A socket operation was attempted to an unreachable host A socket operation was attempted to an unreachable host (17ae1131)
+System.Net.WebException: A socket operation was attempted to an unreachable host A socket operation was attempted to an unreachable host ---> System.Net.Http.HttpRequestException: A socket operation was attempted to an unreachable host ---> System.Net.Sockets.SocketException: A socket operation was attempted to an unreachable host
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.Net.HttpWebRequest.SendRequest()
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Decos.ServiceContext.JoinApiService.JoinApiService.Get(String requestUrl, Boolean needsAuthHeaders) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\ServiceContext\JoinApiService\JoinApiService.cs:line 489
+   at Decos.ServiceContext.JoinApiService.JoinApiService.GetBookItems(String type, String bookId, Int32 pageSize, Int32 skip, String filter) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\ServiceContext\JoinApiService\JoinApiService.cs:line 143
+   at Decos.ServiceContext.JoinApiService.JoinApiService.GetLinkedItems(String bookKey, String itemType, Int32 pageSize, Int32 skip, String filter) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\ServiceContext\JoinApiService\JoinApiService.cs:line 95
+   at AllyWebApi.Processor.GetRelatedList(String mainItemKey, String entity, Int32 pageSize, Int32 skip, Int32& count, String filter) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 386
+   at AllyWebApi.Processor.GetList(String entity, Int32 pageSize, Int32 skip, Int32& count, String filter) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Processor.cs:line 236
+   at AllyWebApi.Controllers.ListController.Get(String entity, Int32 pageSize, Int32 skip, String filter) in D:\SOURCES\JOIN Asia\AllyWebApi\develop\AllyWebApi\AllyWebApi\Controllers\ListController.cs:line 36
